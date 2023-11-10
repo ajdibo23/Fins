@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charest="UTF-8">
+       <title>FINS: The Dog</title>
+       <link rel="icon" type="image/png" sizes="250x250" href="assets/icon.png">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+       <link rel=stylesheet href="./odometer.css">
+<script src="./odometer.js"></script>
+</head>
+
+<style>
+
+body {
+    text-align: center;
+    font-family: 'Secular One', sans-serif; 
+    transition: 1s !important;
+}
+
+#header {
+    font-size: 100px;
+}
+
+.BoxThing {
+    width: 1400px;
+    border: 0.5px solid rgba(55,55,55,.500);
+    padding: 2px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#image:hover {
+    transform: scale(1.15);
+    transition: 1s !important;
+}
+
+#image {
+    border-radius: 50%;
+    transition: 1s !important;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex: 10;
+    column-gap: 20px;
+    justify-content: space-between;
+      }
+
+      button {
+          font-size: 50px;
+          color: #000000;
+          width: 200px;
+    transition: 1s !important;
+      }
+
+      button:hover {
+        transform: scale(1.15);
+    transition: 1s !important;
+      }
+
+
+#countdown {
+    font-size: 50px;
+}
+
+
+      #button {
+        background-image: url(assets/fur.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+              }
+
+      #button1 {
+        background-image: url(assets/fur.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+}
+
+#button2 {
+    background-image: url(assets/fur.png);
+    background-repeat: no-repeat;
+    background-position: center;
+        background-size: cover;
+
+}
+
+#button3 {
+    background-image: url(assets/fur.png);
+    background-repeat: no-repeat;
+    background-position: center;
+        background-size: cover;
+
+}
+
+    </style>
+
+    <body>
+
+<h1 id="header">Fins The Dog</h1>
+<br>
+
+<center>
+<div class="BoxThing">
+    <br>
+<img id="image" style="width: 250px;height: 250px;" src="assets/icon.png"></img>
+<br>
+<br>
+
+<br>
+<br>
+
+<div class="container">
+    <div>
+       <a href="./images.html"><button id="button">Images</button></a>
+    </div>
+    <div>
+        <a href="./quiz.html"><button id="button1">Quiz</button></a>  
+    </div>
+    <div>
+        <a href="./fins.html"><button id="button3">V1 Site</button></a>  
+    </div>
+    <div>
+        <a href="./game.html"><button id="button2" style="font-size: 48px;">Memory</button></a>  
+    </div>
+</div>
+<br>
+
+
+
+<br><br>
+
+<p id="countdown">0</p>
+<h1>Time Till May 6th.</h1>
+<br><br><br>
+<h1 id="visits" class="odometer">0</h1>
+<h1 id="visits1">Site Visits</h1>
+<br><br><br>
+
+<br>
+</div>
+
+
+
+</center>
+
+    </body>
+
+<script>
+
+$("#header").hide();
+$("#header").slideDown(3000);
+
+$("#image").hide();
+$("#image").slideDown(3000);
+
+$("#button").hide();
+$("#button").slideDown(3000);
+
+$("#button1").hide();
+$("#button1").slideDown(3000);
+
+$("#button2").hide();
+$("#button2").slideDown(3000);
+
+$("#button3").hide();
+$("#button3").slideDown(3000);
+
+fetch('http://localhost/visits')
+  .then(response => response.json())
+  .then(data => visits.innerHTML = data);
+
+  // Set the date we're counting down to
+var countDownDate = new Date("May 6, 2021 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+</script>
+
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charest="UTF-8">
+       <title>FINS: The Dog</title>
+       <link rel="icon" type="image/png" sizes="250x250" href="assets/icon.png">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+body {
+    text-align: center;
+    font-family: 'Secular One', sans-serif; 
+    transition: 1s !important;
+}
+
+#header {
+    font-size: 100px;
+}
+
+.BoxThing {
+    width: 1400px;
+    border: 0.5px solid rgba(55,55,55,.500);
+    padding: 2px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 1s !important;
+}
+
+#image:hover {
+    transform: scale(1.15);
+    transition: 1s !important;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex: 10;
+    column-gap: 20px;
+    justify-content: space-between;
+      }
+
+      button {
+          font-size: 50px;
+          color: #000000;
+          width: 200px;
+    transition: 1s !important;
+      }
+
+      button:hover {
+        transform: scale(1.15);
+    transition: 1s !important;
+      }
+
+
+
+
+
+
+#form1,#form2,#form3,#form4,#form5,#form6,#form7,#form8,#form9,#form10 {
+
+font-size: 40px;
+
+}
+
+    </style>
+
+    <body>
+
+<h1 id="header">Quiz</h1>
+<br>
+<a href="./index.html"><button id="button4" style="margin-left:-1200px">Home</button></a>  
+<br>
+<center>
+<div class="BoxThing">
+    <br>
+
+<h1 style="color: black;">Enter Username</h1>
+<br>
+<br>
+<input type="text" placeholder="Username" id="name">
+<br>
+<br>
+<br>
+    <h1 style="color: black;" id="q1">When did we get Fins?</h1>
+    <br>
+    <br>
+                    <select id="form1" name="form1">
+                      <option value="1" name="1">March 30th</option>
+                      <option value="2" name="2">June 30th</option>
+                      <option value="3" name="3">July 1st</option>
+                      <option value="4" name="4">June 10th</option>
+                      </select>
+                      <br>
+                      <br>
+                      <h1 style="color: black;" id="q2">How old is Fins?</h1>
+                      <br>
+                      <br>
+                      <select id="form2" name="form2">
+                        <option value="1" name="1">2 Years</option>
+                        <option value="2" name="2">1 Year</option>
+                        <option value="3" name="3">4 Years</option>
+                        <option value="4" name="4">3 Years</option>
+                        </select>
+                      <br>
+                      <br>
+                      <h1 style="color: black;" id="q3">What breed is Fins?</h1>
+                      <br>
+                      <br>
+                      <select id="form3" name="form3">
+                        <option value="1" name="1">Germen Shepherd</option>
+                        <option value="2" name="2">Golden Retriever</option>
+                        <option value="3" name="3">Goldendoodle</option>
+                        <option value="4" name="4">Poodle</option>
+                        </select>
+                      <br>
+                      <br>
+                      <h1 style="color: black;" id="q4">What is Fins's favorite food?</h1>
+                      <br>
+                      <br>
+                      <select id="form4" name="form4">
+                        <option value="1" name="1">Cheese</option>
+                        <option value="2" name="2">Bananas</option>
+                        <option value="3" name="3">Carrots</option>
+                        <option value="4" name="4">Bacon</option>
+                        </select>
+                      <br>
+                      <br>
+                      <h1 style="color: black;" id="q5">When is Fins's Birthday?</h1>
+                      <br>
+                      <br>
+                      <select id="form5" name="form5">
+                        <option value="1" name="1">May 1st</option>
+                        <option value="2" name="2">May 5th</option>
+                        <option value="3" name="3">June 30th</option>
+                        <option value="4" name="4">May 6th</option>
+                        </select>
+                      <br>
+                      <br>
+                      <h1 style="color: black;" id="q6">What is Fins's favorite activity?</h1>
+                      <br>
+                      <br>
+                      <select id="form6" name="form6">
+                        <option value="1" name="1">Eating bones</option>
+                        <option value="2" name="2">Going on walks</option>
+                        <option value="3" name="3">Playing in the backyard with Buddy</option>
+                        <option value="4" name="4">All Of The Above</option>
+                        </select>
+                      <br>
+                      <br>
+                      <h1 style="color: black;" id="q7">What is Fins's favorite toy?</h1>
+                      <br>
+                      <br>
+                      <select id="form7" name="form7">
+                        <option value="1" name="1">Foxxy</option>
+                        <option value="2" name="2">Shark Toy</option>
+                        <option value="3" name="3">Chicken Leg Bone</option>
+                        <option value="4" name="4">Orange Ball</option>
+                        </select>
+                      <br>
+                      <br>
+                      <h1 style="color: black;" id="q8">What state did we get Fins from?</h1>
+                      <br>
+                      <br>
+                      <select id="form8" name="form8">
+                        <option value="1" name="1">Illinois</option>
+                        <option value="2" name="2">Ohio</option>
+                        <option value="3" name="3">Iowa</option>
+                        <option value="4" name="4">Indiana</option>
+                        </select>
+                      <br>
+                      <br>
+                      <h1 style="color: black;" id="q9">What color is his collar?</h1>
+                      <br>
+                      <br>
+                      <select id="form9" name="form9">
+                        <option value="3" name="3">Blue</option>
+                        <option value="2" name="2">Green</option>
+                        <option value="1" name="1">Red</option>
+                        <option value="4" name="4">Yellow</option>
+                        </select>
+                      <br>
+                      <br>
+                      <h1 style="color: black;" id="q10"q>What was Fins's original name?</h1>
+                      <br>
+                      <br>
+                      <select id="form10" name="form10">
+                        <option value="1" name="1">Buddy</option>
+                        <option value="2" name="2">Bud</option>
+                        <option value="3" name="3">Henry</option>
+                        <option value="4" name="4">Max</option>
+                        </select>
+                      <br>
+                      <br>
+                      <br>
+               
+              </div>
+              
+              </div>
+              <button onclick="getamount()">Submit</button>
+              <h1 id="stats"></h1>
+              <br>
+              <br>
+              <br>
+              <br>
+<h1 style="font-size: 70px;">Top Scores</h1>
+<div class="counters"></div>
+</center>
+
+    </body>
+
+<script>
+var quiz1 = 0
+var quiz2 = 0
+var quiz3 = 0
+var quiz4 = 0
+var quiz5 = 0
+var quiz6 = 0
+var quiz7 = 0
+var quiz8 = 0
+var quiz9 = 0
+var quiz10 = 0
+
+
+
+
+function getamount() {
+   
+    var username = document.getElementById("name").value;
+    var form1 = document.getElementById("form1").value;
+    var form2 = document.getElementById("form2").value;
+    var form3 = document.getElementById("form3").value;
+    var form4 = document.getElementById("form4").value;
+    var form5 = document.getElementById("form5").value;
+    var form6 = document.getElementById("form6").value;
+    var form7 = document.getElementById("form7").value;
+    var form8 = document.getElementById("form8").value;
+    var form9 = document.getElementById("form9").value;
+    var form10 = document.getElementById("form10").value;
+
+if (form1 == 2) {
+var quiz1 = 1
+q1.innerHTML = "When did we get Fins: Right"
+} else {
+var quiz1 = 0 
+q1.innerHTML = "When did we get Fins: Wrong"
+}
+
+if (form2 == 2) {
+var quiz2 = 1
+q2.innerHTML = "How old is Fins: Right"
+} else {
+var quiz2 = 0 
+q2.innerHTML = "How old is Fins: Wrong"
+}
+
+if (form3 == 3) {
+var quiz3 = 1
+q3.innerHTML = "What breed is Fins: Right"
+} else {
+var quiz3 = 0 
+q3.innerHTML = "What breed is Fins: Wrong"
+}
+
+if (form4 == 1) {
+var quiz4 = 1
+q4.innerHTML = "What is Fins's favorite food: Right"
+} else {
+var quiz4 = 0 
+q4.innerHTML = "What is Fins's favorite food: Wrong"
+}
+
+if (form5 == 4) {
+var quiz5 = 1
+q5.innerHTML = "When is Fins's Birthday: Right"
+} else {
+var quiz5 = 0 
+q5.innerHTML = "When is Fins's Birthday: Wrong"
+}
+
+if (form6 == 4) {
+var quiz6 = 1
+q6.innerHTML = "What is Fins's favorite activity: Right"
+} else {
+var quiz6 = 0 
+q6.innerHTML = "What is Fins's favorite activity: Wrong"
+}
+
+if (form7 == 1) {
+var quiz7 = 1
+q7.innerHTML = "What is Fins's favorite toy: Right"
+} else {
+var quiz7 = 0 
+q7.innerHTML = "What is Fins's favorite toy: Wrong"
+}
+
+if (form8 == 3) {
+var quiz8 = 1
+q8.innerHTML = "What state did we get Fins from: Right"
+} else {
+var quiz8 = 0 
+q8.innerHTML = "What state did we get Fins from: Wrong"
+}
+
+if (form9 == 3) {
+var quiz9 = 1
+q9.innerHTML = "What color is his collar: Right"
+} else {
+var quiz9 = 0 
+q9.innerHTML = "What color is his collar: Wrong"
+}
+
+if (form10 == 2) {
+var quiz10 = 1
+q10.innerHTML = "What was Fins's original name: Right"
+} else {
+var quiz10 = 0 
+q10.innerHTML = "What was Fins's original name: Wrong"
+}
+var number = quiz1 + quiz2 + quiz3 + quiz4 + quiz5 + quiz6 + quiz7 + quiz8 + quiz9 + quiz10
+stats.innerHTML = "You Scored " + number + " Out Of 10"
+
+fetch('http://localhost/newscore/'+number+'/'+username+'')
+  .then(response => response.json())
+  .then(data => console.log(data));
+}
+
+update();
+
+function update(){
+    $.getJSON("http://localhost/scores",(data)=>{
+
+       list = data.users.length
+        for (var q = 0; q < list; q++) {
+          updateData(q, data)
+        }
+    });
+}
+var c = 1;
+var list = 0;
+function timeout() {
+    for (var t = 0; t <= list-1; t++) {
+      var htmlcard = `
+      <div class="channel_${c} card" id="card_thing_${c}">
+      <div class="chnam" style="font-size: 30px;">Loading</div>
+      <div class="subscriberCount" style="font-size: 30px;">0</div>
+      <br>
+      </div>`;
+      $('.counters').append(htmlcard);
+      c += 1;
+    }
+
+  }
+
+
+function updateData(q, data) {
+  setTimeout(function () { 
+    var cnb = q+1;
+    $(".channel_"+cnb+" .chnam").html(data.users[q].username);
+    $(".channel_"+cnb+" .subscriberCount").html(data.users[q].score);
+  })
+   
+
+
+}
+setTimeout(timeout,2000);
+setInterval(update,2000);
+</script>
+
+</html>
